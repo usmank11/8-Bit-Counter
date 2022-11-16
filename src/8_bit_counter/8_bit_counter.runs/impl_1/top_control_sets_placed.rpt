@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Wed Nov 16 00:25:14 2022
+| Host         : DESKTOP-I5HHF0K running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |            2 |
+|      9 |            1 |
+|     12 |            1 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              62 |           16 |
+| Yes          | No                    | No                     |              37 |           13 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+--------------------------------------+----------------------------------+------------------+----------------+
+|             Clock Signal             |             Enable Signal            |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++--------------------------------------+--------------------------------------+----------------------------------+------------------+----------------+
+|  refreshclk_generator/CLK            |                                      |                                  |                1 |              2 |
+|  counterclk_generator/counter_reg[7] | switch_IBUF                          |                                  |                3 |              8 |
+|  clk_IBUF_BUFG                       | convert_bin_bcd/i1                   |                                  |                2 |              8 |
+|  clk_IBUF_BUFG                       | convert_bin_bcd/temp_tens[2]_i_1_n_0 |                                  |                2 |              9 |
+|  clk_IBUF_BUFG                       | convert_bin_bcd/ones[3]_i_1_n_0      |                                  |                6 |             12 |
+|  clk_IBUF_BUFG                       |                                      |                                  |                8 |             19 |
+|  clk_IBUF_BUFG                       |                                      | refreshclk_generator/divided_clk |                8 |             31 |
+|  clk_IBUF_BUFG                       |                                      | counterclk_generator/divided_clk |                8 |             31 |
++--------------------------------------+--------------------------------------+----------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="49057965005850fs"></ZoomStartTime>
+      <ZoomEndTime time="51645965005851fs"></ZoomEndTime>
+      <Cursor1Time time="49931965006000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/test/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/UUT/refresh_clk" type="logic">
+      <obj_property name="ElementShortName">refresh_clk</obj_property>
+      <obj_property name="ObjectShortName">refresh_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/UUT/counter_clock_signal" type="logic">
+      <obj_property name="ElementShortName">counter_clock_signal</obj_property>
+      <obj_property name="ObjectShortName">counter_clock_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/UUT/refreshclk_generator/counter_val" type="array">
+      <obj_property name="ElementShortName">counter_val[31:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_val[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/UUT/refreshclk_generator/div_val" type="array">
+      <obj_property name="ElementShortName">div_val[31:0]</obj_property>
+      <obj_property name="ObjectShortName">div_val[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/switch" type="logic">
+      <obj_property name="ElementShortName">switch</obj_property>
+      <obj_property name="ObjectShortName">switch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/UUT/eight_bit_counter_val" type="array">
+      <obj_property name="ElementShortName">eight_bit_counter_val[7:0]</obj_property>
+      <obj_property name="ObjectShortName">eight_bit_counter_val[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/UUT/ones" type="array">
+      <obj_property name="ElementShortName">ones[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ones[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/UUT/tens" type="array">
+      <obj_property name="ElementShortName">tens[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tens[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/UUT/hundreds" type="array">
+      <obj_property name="ElementShortName">hundreds[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hundreds[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/anode" type="array">
+      <obj_property name="ElementShortName">anode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">anode[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/cathode" type="array">
+      <obj_property name="ElementShortName">cathode[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cathode[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/UUT/seg_controller/one_digit" type="array">
+      <obj_property name="ElementShortName">one_digit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">one_digit[3:0]</obj_property>
+   </wvobject>
+</wave_config>
